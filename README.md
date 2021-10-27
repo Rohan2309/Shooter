@@ -7,7 +7,7 @@ You can see the **Controls** and **Rules** below
 ## Demo 
 
 
-**Play** Click [Here]()
+**Play** Click [Here](https://rohan2309.github.io/Shooter/)
 
 
 
