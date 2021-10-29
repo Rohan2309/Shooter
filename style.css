@@ -55,7 +55,7 @@ form > input {
   border: none;
   color: white;
   transition: all 0.5s;
-  background-color: indianred;
+  background-color: rgb(126, 92, 205);
   font-size: 1.4vmax;
   font-family: cursive;
   outline: none;
@@ -65,12 +65,12 @@ form > select:hover {
   box-shadow: 0 0 10px white;
 }
 form > input:hover {
-  background-color: rgb(194, 27, 91);
+  background-color: rgb(58, 27, 233);
   box-shadow: 0 0 10px white;
 }
 
 .gameover {
-  background-color: rgba(122, 122, 122, 0.041);
+  background-color: rgba(83, 82, 82, 0.041);
   border-radius: 5px;
   position: fixed;
   top: 50%;

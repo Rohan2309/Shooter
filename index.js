@@ -41,15 +41,15 @@ document.querySelector("input").addEventListener("click", (e) => {
     return (difficulty = 5);
   }
   if (userValue === "Medium") {
-    setInterval(spawnEnemy, 1400);
+    setInterval(spawnEnemy, 1500);
     return (difficulty = 8);
   }
   if (userValue === "Hard") {
-    setInterval(spawnEnemy, 1000);
+    setInterval(spawnEnemy, 1200);
     return (difficulty = 10);
   }
   if (userValue === "Insane") {
-    setInterval(spawnEnemy, 700);
+    setInterval(spawnEnemy, 1000);
     return (difficulty = 12);
   }
 });
@@ -255,7 +255,7 @@ class Particle {
 // -------------------------------------------------Main Logic Here -------------------------------------------
 
 // Creating Player Object, Weapons Array, Enemy Array, Etc Array
-const abhi = new Player(playerPosition.x, playerPosition.y, 15, "white");
+const ron = new Player(playerPosition.x, playerPosition.y, 15, "white");
 const weapons = [];
 const hugeWeapons = [];
 const enemies = [];
@@ -318,7 +318,7 @@ function animation() {
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   // Drawing Player
-  abhi.draw();
+  ron.draw();
 
   // Generating Particles
   particles.forEach((particle, particleIndex) => {
@@ -358,12 +358,12 @@ function animation() {
 
     // Finding Distance between player and enemy
     const distanceBetweenPlayerAndEnemy = Math.hypot(
-      abhi.x - enemy.x,
-      abhi.y - enemy.y
+      ron.x - enemy.x,
+      ron.y - enemy.y
     );
 
     // Stoping Game if enemy hit player
-    if (distanceBetweenPlayerAndEnemy - abhi.radius - enemy.radius < 1) {
+    if (distanceBetweenPlayerAndEnemy - ron.radius - enemy.radius < 1) {
       cancelAnimationFrame(animationId);
       gameOverSound.play();
       hugeWeaponSound.pause();
